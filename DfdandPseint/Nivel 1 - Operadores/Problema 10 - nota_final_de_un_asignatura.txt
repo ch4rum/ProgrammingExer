@@ -1,0 +1,24 @@
+10. Un alumno desea saber 
+cuál será su calificación final 
+en la materia de Algoritmos. 
+Dicha calificación se compone 
+de los siguientes porcentajes: 
+ 
+• 55% del promedio de sus tres 
+calificaciones parciales. 
+• 30% de la calificación del 
+examen final. 
+ • 15% de la calificación de 
+un trabajo final
+===========================
+
+Entrada = 3 notas parciales(55%)
+             1 examen final(30%)
+             1 trabajo final(15%)
+
+Salida = nota fianal
+
+((x1+x2+x3)/3)*55/100
+x2*30/100
+x3*15/100
+

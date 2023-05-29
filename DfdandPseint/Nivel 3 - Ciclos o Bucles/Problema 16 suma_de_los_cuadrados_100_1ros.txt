@@ -1,0 +1,8 @@
+16. Hacer un programa que 
+calcule la suma de los cuadrados 
+de los 100 primeros números
+========================
+
+Entrada = 100 números
+
+Salida = + de los ^2

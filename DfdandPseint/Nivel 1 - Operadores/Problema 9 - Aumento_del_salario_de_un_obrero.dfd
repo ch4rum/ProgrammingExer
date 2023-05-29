@@ -1,0 +1,35 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+1
+7
+salario
+1
+0
+4
+1
+17
+'Dame tu salario'
+5
+1
+7
+salario
+6
+2
+10
+incremento
+12
+salario*0.25
+5
+total
+18
+salario+incremento
+4
+1
+48
+'Su salario con el 25% de incremento es: ',total
+1

@@ -1,0 +1,17 @@
+11. Hacer un programa que 
+imprima la suma de todos los 
+números pares que hay 
+desde 1 hasta n, y diga 
+cuantos números hay?
+========================
+
+Entrada = 1 numero 
+
+Salida = - suma de los pares
+            - conteo
+
+1 2 3 4 5 6 7 8 9 10
+  2    4    6    8    10
+      6         14    10
+           20     10
+               30

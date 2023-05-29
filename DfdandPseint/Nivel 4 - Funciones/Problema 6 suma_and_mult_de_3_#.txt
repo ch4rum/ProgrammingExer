@@ -1,0 +1,8 @@
+6. Facilite el ingreso de tres 
+números, muestre su respectiva 
+suma y multiplicación.
+========================
+
+Entrada = 3 #
+
+Salida = suma, mult de 3 #

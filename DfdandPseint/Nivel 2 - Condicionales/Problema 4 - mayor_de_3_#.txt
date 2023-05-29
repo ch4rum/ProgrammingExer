@@ -1,0 +1,9 @@
+3. Dado 3 números Calcular 
+el Mayor
+==========================
+
+Entrada =  #1
+              #2
+              #3
+
+Salida = el mayor

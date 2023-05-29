@@ -1,0 +1,11 @@
+12. Desarrolle un programa
+que permita ingresar un 
+número y a través de una 
+función diga si es par o 
+impar.
+========================
+
+Entrada = #
+
+Salida = par o impar
+

@@ -1,0 +1,56 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+6
+nombre
+2
+''
+4
+edad
+1
+0
+4
+sexo
+2
+''
+4
+1
+16
+'Dame tu nombre'
+5
+1
+6
+nombre
+4
+1
+14
+'Dame tu edad'
+5
+1
+4
+edad
+4
+1
+56
+'Dime si eres hombre escribe M, si eres mujer escribe F'
+5
+1
+4
+sexo
+7
+0
+1
+23
+edad>=18 and sexo = 'M'
+13
+4
+1
+14
+'Hola ',nombre
+13
+1

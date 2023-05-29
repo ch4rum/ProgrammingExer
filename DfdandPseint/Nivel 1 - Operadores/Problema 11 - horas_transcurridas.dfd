@@ -1,0 +1,47 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+5
+horas
+1
+0
+7
+minutos
+1
+0
+3
+seg
+1
+0
+4
+1
+61
+'Digite las horas, luego los minutos y despues los segundos.'
+5
+1
+17
+horas,minutos,seg
+6
+3
+2
+t1
+10
+horas*3600
+2
+t2
+10
+minutos*60
+6
+totalS
+9
+t1+t2+seg
+4
+1
+108
+'El numero de segundos con ',horas,' horas, ',minutos,' minutos, ',seg,' segundos, son: ',totalS,' segundos'
+1

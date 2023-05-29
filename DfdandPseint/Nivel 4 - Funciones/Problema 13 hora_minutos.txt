@@ -1,0 +1,13 @@
+13. Desarrolle un programa 
+del cual de un tiempo ingresado 
+en minutos, visualizarlo por
+pantalla en horas, minutos
+========================
+
+Entrada = minutos
+
+Salida = hora: minutos:
+
+hora --> minutos / 60
+minutos2 --> minutos mod 60
+

@@ -1,0 +1,6 @@
+1. Suma de los n primeros números
+========================
+
+Entrada = numero veces
+
+Salida = resultado

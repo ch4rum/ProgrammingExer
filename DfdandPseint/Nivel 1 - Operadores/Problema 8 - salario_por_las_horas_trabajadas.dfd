@@ -1,0 +1,43 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+5
+horas
+1
+0
+5
+valor
+1
+0
+4
+1
+24
+'Cuantas horas trabajo?'
+5
+1
+5
+horas
+4
+1
+22
+'Cuanto vale la hora?'
+5
+1
+5
+valor
+6
+1
+7
+salario
+11
+horas*valor
+4
+1
+70
+'El salario de pepito por las ',horas,' horas de trabajo es: ',salario
+1

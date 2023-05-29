@@ -1,0 +1,17 @@
+13. Ecuaciones de Segundo 
+Grado: Ax^2 + Bx + C
+==========================
+
+Entrada = valor A,B,C
+              
+Salida = Rta1,Rta2
+
+F=(-B +- sqrt(B*B-4*A*C))/2*A
+D= B*B-4*A*C
+F=(-B+- sqrt(D))/2*A
+D>0
+
+Rta1 = (-B+ sqrt (D))/2*A
+Rta2 = (-B- sqrt (D))/2*A
+D<0
+La ecuacion no tiene solución

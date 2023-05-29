@@ -1,0 +1,50 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+2
+n1
+1
+0
+2
+n2
+1
+0
+3
+ n3
+1
+0
+4
+1
+58
+'Digite tus 3 notas para saber si aprobaste la asignatura'
+5
+1
+8
+n1,n2,n3
+6
+1
+8
+promedio
+12
+(n1+n2+n3)/3
+7
+1
+1
+14
+promedio>=10.5
+4
+1
+40
+'Felicidades :D aprobaste con ',promedio
+13
+4
+1
+67
+'No aprobaste, echale ganas para la proxima, tu nota fue ',promedio
+13
+1

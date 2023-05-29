@@ -1,0 +1,10 @@
+2. Hacer un programa que 
+rellene un arreglo con los 10
+primeros números enteros y
+los muestre en pantalla en 
+orden descendente
+========================
+
+Entrada = 
+
+Salida = 10 1ros # reverse

@@ -1,0 +1,13 @@
+6. Sumar pares desde n 
+hasta m
+========================
+
+Entrada = 1 numero 
+
+Salida = suma pares hasta m
+
+
+
+
+
+

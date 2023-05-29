@@ -1,0 +1,46 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+1
+6
+compra
+1
+0
+4
+1
+25
+'Cuanto valio la compra?'
+5
+1
+6
+compra
+7
+0
+1
+11
+compra>1000
+4
+1
+51
+'El total a pagar por la compra es: ',compra,' USD'
+13
+6
+2
+9
+descuento
+11
+compra*0.20
+7
+precioF
+16
+compra-descuento
+4
+1
+52
+'El total a pagar por la compra es: ',precioF,' USD'
+13
+1

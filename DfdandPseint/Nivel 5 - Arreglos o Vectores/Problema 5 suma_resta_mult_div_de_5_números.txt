@@ -1,0 +1,11 @@
+5. Hacer un programa que lea 
+5 números por teclado, los 
+almacene en un array y 
+muestre la suma, resta, 
+multiplicación y división de 
+todos.
+========================
+
+Entrada = 5 #s
+
+Salida = +, -, * y /

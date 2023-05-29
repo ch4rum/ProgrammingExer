@@ -1,0 +1,35 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+1
+r
+1
+0
+2
+pi
+6
+3.1416
+4
+1
+67
+'Dame el radio para poder hallar la longitud de la circunferencia.'
+5
+1
+1
+r
+6
+1
+1
+L
+6
+2*pi*r
+4
+1
+41
+'La longitud de la circunferencia es: ',L
+1

@@ -1,0 +1,35 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+2
+4
+cat1
+1
+0
+4
+cat2
+1
+0
+4
+1
+50
+'Digite el cateto #1, despues digite el cateto #2'
+5
+1
+9
+cat1,cat2
+6
+1
+4
+hipo
+23
+sqrt((cat1)^2+(cat2)^2)
+4
+1
+50
+'La hipotenusa del triangulo rectangulo es: ',hipo
+1

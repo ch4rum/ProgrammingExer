@@ -1,0 +1,8 @@
+14. Hacer un programa que lea 
+2 números, y los imprima en 
+forma ascendente
+==========================
+
+Entrada = 2 números
+              
+Salida = forma ascente

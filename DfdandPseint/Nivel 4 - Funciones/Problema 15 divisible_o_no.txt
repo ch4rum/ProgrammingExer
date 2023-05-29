@@ -1,0 +1,10 @@
+15. Determinar si un número 
+es divisible por otro e imprimir 
+divisible, caso contrario 
+visualizar no es divisible.
+========================
+
+Entrada = n1, n2
+
+Salida = divisible o no
+

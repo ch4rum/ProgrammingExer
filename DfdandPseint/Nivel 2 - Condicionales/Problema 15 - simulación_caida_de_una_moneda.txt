@@ -1,0 +1,7 @@
+15. Hacer un programa que 
+simule el lanzamiento de una 
+moneda
+==========================
+
+cara -> 1
+sello -> 2

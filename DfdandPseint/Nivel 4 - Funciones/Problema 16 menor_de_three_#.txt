@@ -1,0 +1,12 @@
+16. Desarrolle un programa 
+que solicite tres números 
+distintos e indique de 
+manera visual en la pantalla
+cuál de ellos es el número 
+menor ingresado
+========================
+
+Entrada = n1, n2,n3
+
+Salida = menor
+

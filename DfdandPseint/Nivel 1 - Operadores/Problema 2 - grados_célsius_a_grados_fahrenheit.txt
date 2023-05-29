@@ -1,0 +1,9 @@
+2. Convertir grados célsius a 
+grados Fahrenheit
+===========================
+
+Entrada = grados célcius
+
+Salida = grados fahrenheit
+
+f=9/5c 32

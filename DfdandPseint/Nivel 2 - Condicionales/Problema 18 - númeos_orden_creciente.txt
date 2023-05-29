@@ -1,0 +1,9 @@
+18. Hacer un programa que 
+pida tres números y detecte 
+si se han introducido en orden 
+creciente
+==========================
+
+entrada = 3 #
+
+salidad = orden creciente

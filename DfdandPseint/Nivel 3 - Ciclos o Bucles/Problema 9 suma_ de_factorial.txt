@@ -1,0 +1,13 @@
+9. Suma de Factoriales
+========================
+
+Entrada = 1 numero 
+
+Salida = sujma de factoriales
+
+
+
+
+
+
+

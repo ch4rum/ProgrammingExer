@@ -1,0 +1,10 @@
+21. Que lea una hora en 
+hora:minutos:segundos y diga 
+la hora que es un segundo 
+después
+==========================
+
+entrada = hora
+
+salidad = segundos+1
+          

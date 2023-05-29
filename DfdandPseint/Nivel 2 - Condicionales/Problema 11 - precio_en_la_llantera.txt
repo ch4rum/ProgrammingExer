@@ -1,0 +1,11 @@
+11. Calcular el total que una 
+persona debe pagar en una 
+llantera, si el precio de cada 
+llanta es de $800 si se compran 
+menos de 5 llantas y de $700 
+si se compran 5 o más
+==========================
+
+Entrada = # de llantas
+              
+Salida = total a pagar llantas

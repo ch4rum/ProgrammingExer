@@ -1,0 +1,10 @@
+2. Crear un programa que 
+permita leer el valor 
+correspondiente a una 
+distancia en kilómetros y las
+visualice expresada en metros
+========================
+
+Entrada = kilometros
+
+Salida = metros

@@ -1,0 +1,9 @@
+5. Facilite el ingreso de 2 
+números, muestre su suma,
+resta multiplicación, división
+y resto (modulo) de la división.
+========================
+
+Entrada = 2 #
+
+Salida = + , -, /, *, % de 2 #

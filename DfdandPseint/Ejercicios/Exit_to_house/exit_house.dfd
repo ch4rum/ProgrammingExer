@@ -1,0 +1,118 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+4
+1
+29
+'Estas fuera de la casa? S/N'
+5
+1
+4
+casa
+7
+1
+1
+10
+casa = 'S'
+4
+1
+31
+'Quieres entrar a la casa? S/N'
+5
+1
+6
+entrar
+7
+0
+1
+12
+entrar = 'S'
+4
+1
+24
+'Estas fuera de la casa'
+13
+4
+1
+28
+'Abrir la puerta de la casa'
+13
+13
+4
+1
+20
+'Tienes llaves? S/N'
+5
+1
+6
+llaves
+9
+1
+13
+llaves != 'S'
+4
+1
+18
+'Busca las llaves'
+4
+1
+20
+'Tienes llaves? S/N'
+5
+1
+6
+llaves
+11
+4
+1
+19
+'Tienes bolso? S/N'
+5
+1
+5
+bolso
+9
+1
+12
+bolso != 'S'
+4
+1
+16
+'Busca el bolso'
+4
+1
+19
+'Tienes bolso? S/N'
+5
+1
+5
+bolso
+11
+4
+1
+25
+'Necesitas algo mas? S/N'
+5
+1
+7
+algoMas
+7
+0
+1
+13
+algoMas = 'S'
+13
+4
+1
+24
+'Busca lo que necesites'
+13
+4
+1
+11
+'Salir casa
+13
+1

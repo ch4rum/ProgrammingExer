@@ -1,0 +1,23 @@
+13. Un maestro desea saber que 
+porcentaje de hombres y que 
+porcentaje de mujeres hay en 
+un grupo de estudiantes
+===========================
+
+Entrada = #hombres, #mujeres
+
+Salida = %hombres, %mujeres
+
+estudiantes= hombres+mujeres
+#estudiantes -> 100%
+#hombres    -> x%
+
+x= (#hombres*100)/#estudiantes
+
+
+
+
+
+
+
+

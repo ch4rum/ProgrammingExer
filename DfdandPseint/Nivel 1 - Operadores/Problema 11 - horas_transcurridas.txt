@@ -1,0 +1,16 @@
+11. Calcular la cantidad de 
+segundos que están incluidos 
+en el número de horas, 
+minutos y segundos 
+ingresados por el usuario
+===========================
+
+Entrada = horas,minutos y segundos
+
+Salida = total segundos
+
+t1= horas*3600
+t2= minutos*60
+
+
+

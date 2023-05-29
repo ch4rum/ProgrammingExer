@@ -1,0 +1,13 @@
+10. Desarrolle un programa 
+que permita ingresar tres 
+números, obtener su promedio 
+y visualizar "Aprobado", si su 
+promedio es mayor a 10.5, 
+caso contrario visualizara 
+"Mejore la nota".
+========================
+
+Entrada = 3 #
+
+Salida = aprobado o desaprobado
+

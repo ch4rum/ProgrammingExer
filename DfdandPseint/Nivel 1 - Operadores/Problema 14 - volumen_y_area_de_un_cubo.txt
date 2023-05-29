@@ -1,0 +1,19 @@
+14.Volumen y Área de un Cubo
+===========================
+
+Entrada = arista
+
+Salida = volumen y área
+
+V = a*a*a
+A= 6*(a*a)
+
+
+
+
+
+
+
+
+
+

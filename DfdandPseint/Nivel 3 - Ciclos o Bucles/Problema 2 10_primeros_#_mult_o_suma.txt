@@ -1,0 +1,10 @@
+2. Digite un número, si el 
+número supera a 10, multiplique
+los 10 primeros números, sino,
+sumelos
+========================
+
+Entrada = 1 numero 
+
+Salida = si supera 1o mult
+            sino sumar

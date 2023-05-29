@@ -1,0 +1,14 @@
+11. Que exprese en horas, 
+minutos y segundos un tiempo 
+expresado en segundos.
+========================
+
+Entrada = segundos
+
+Salida = horas,minutos,seg 
+
+hora --> seg/3600
+seg --> seg mod 3600
+minutos --> seg /60
+seg --> seg mod 60
+

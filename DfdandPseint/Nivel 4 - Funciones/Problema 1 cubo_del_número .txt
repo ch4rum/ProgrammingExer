@@ -1,0 +1,7 @@
+1. Crear una función que permita 
+calcular el cubo de un número 
+========================
+
+Entrada = numero
+
+Salida = cubo del numero

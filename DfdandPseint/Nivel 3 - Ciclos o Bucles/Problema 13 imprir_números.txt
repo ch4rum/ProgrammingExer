@@ -1,0 +1,11 @@
+13. Hacer un programa que
+pida dos números y muestre
+todos los números que van
+desde el primero al segundo.
+Se debe controlar que los 
+valores son correctos. 
+========================
+
+Entrada = 2 numero 
+
+Salida = # del 1ro al 2do

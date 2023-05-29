@@ -1,0 +1,8 @@
+2. Mostrar el resultado de la 
+suma de 2 números enteros, si 
+esta supera a 10
+========================
+
+Entrada = 2 números 
+
+Salida = suma si supera 10

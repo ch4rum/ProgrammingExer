@@ -1,0 +1,14 @@
+7. Digite un número por el 
+teclado y determine si es
+primo o no
+========================
+
+Entrada = 1 numero 
+
+Salida = primo o no
+
+
+
+
+
+

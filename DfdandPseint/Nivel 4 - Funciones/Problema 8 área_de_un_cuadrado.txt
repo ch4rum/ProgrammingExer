@@ -1,0 +1,9 @@
+8. Calcule el área de un 
+cuadrado. 
+========================
+
+Entrada = lado
+
+Salida = area
+
+lado*lado

@@ -1,0 +1,11 @@
+19. Hacer un programa que 
+pida 3 números e indicar si el 
+tercero es igual a la suma del 
+primero y el segundo
+==========================
+
+entrada = 3 #
+
+salidad = si el #3 es igual a la 
+            suma de #1 y #2
+          

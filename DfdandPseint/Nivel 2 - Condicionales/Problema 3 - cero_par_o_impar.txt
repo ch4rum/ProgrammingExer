@@ -1,0 +1,7 @@
+3.  Determinar si un número 
+es par, impar o cero
+========================
+
+Entrada = número
+
+Salida = par, impar o cero

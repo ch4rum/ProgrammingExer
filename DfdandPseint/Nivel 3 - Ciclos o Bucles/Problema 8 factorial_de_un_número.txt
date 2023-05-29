@@ -1,0 +1,12 @@
+8. Factorial de un número
+========================
+
+Entrada = 1 numero 
+
+Salida = el factorial
+
+
+
+
+
+

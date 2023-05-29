@@ -1,0 +1,10 @@
+8. Hacer un programa que 
+lea 5 números por teclado, 
+los copie a otro array 
+multiplicados por 2 y 
+muestre el segundo array
+========================
+
+Entrada = 5 #s
+
+Salida = mult *2 en 2array

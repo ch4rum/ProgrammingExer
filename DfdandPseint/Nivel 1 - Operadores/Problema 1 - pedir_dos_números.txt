@@ -1,0 +1,12 @@
+1. Pedir dos números al
+usuario y sumarlos,
+restarlos, multiplicarlos y 
+dividirlos.
+========================
+
+Entrada = 2 números del 
+              usuario
+
+Salida = resultado de la suma, 
+          resta, multiplicación 
+          y división

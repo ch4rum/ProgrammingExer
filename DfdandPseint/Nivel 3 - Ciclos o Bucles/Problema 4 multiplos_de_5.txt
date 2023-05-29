@@ -1,0 +1,6 @@
+4. Multiplos de 5 hasta n
+========================
+
+Entrada = 1 numero 
+
+Salida = todos los multiplos

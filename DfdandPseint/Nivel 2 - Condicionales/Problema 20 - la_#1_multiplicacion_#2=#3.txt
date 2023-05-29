@@ -1,0 +1,11 @@
+20. Hacer un programa Que 
+tome tres números y diga si 
+la multiplicación de los dos 
+primeros es igual al tercero
+==========================
+
+entrada = 3 #
+
+salidad = si el #3 es igual a la 
+            mult de #1 y #2
+          

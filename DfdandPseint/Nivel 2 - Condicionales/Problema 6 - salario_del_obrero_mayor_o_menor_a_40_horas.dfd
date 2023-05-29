@@ -1,0 +1,62 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+1
+5
+horas
+1
+0
+4
+1
+24
+'Cuantas horas trabajo?'
+5
+1
+5
+horas
+7
+0
+1
+9
+horas >40
+6
+1
+8
+salario1
+8
+horas*16
+4
+1
+37
+'El salario del obrero es: ',salario1
+13
+6
+3
+7
+salario
+8
+horas-40
+8
+salario1
+5
+40*16
+8
+salario2
+10
+salario*20
+6
+1
+5
+total
+17
+salario1+salario2
+4
+1
+34
+'El salario del obrero es: ',total
+13
+1

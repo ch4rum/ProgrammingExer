@@ -1,0 +1,9 @@
+10. Hacer un programa que
+lea 10 números por teclado,
+los almacene en un array y
+muestre la media
+========================
+
+Entrada = 10 #s
+
+Salida = media de 10 # x tec

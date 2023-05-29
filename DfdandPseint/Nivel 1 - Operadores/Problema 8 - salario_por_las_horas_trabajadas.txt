@@ -1,0 +1,12 @@
+8. Dadas las horas trabajadas 
+de una persona y el valor por 
+hora. Calcular su salario e 
+imprimirlo
+===========================
+
+Entrada = horas trabajadas
+             valor de las horas
+
+Salida = salario de trabajo
+
+

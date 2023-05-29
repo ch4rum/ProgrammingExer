@@ -1,0 +1,95 @@
+ Dfd (c)
+1
+1
+1
+0
+0
+6
+3
+4
+num1
+1
+0
+4
+num2
+1
+0
+4
+num3
+1
+0
+4
+1
+16
+'Dame 3 numeros'
+5
+1
+14
+num1,num2,num3
+7
+0
+1
+27
+num1 < num2 and num1 < num3
+7
+0
+1
+27
+num2 < num1 and num2 < num3
+7
+0
+1
+27
+num3 < num1 and num3 < num2
+13
+7
+0
+1
+11
+num2 < num1
+4
+1
+34
+'Orden: ',num3,', ',num1,', ',num2
+13
+4
+1
+34
+'Orden: ',num3,', ',num2,', ',num1
+13
+13
+13
+7
+0
+1
+11
+num1 < num3
+4
+1
+34
+'Orden: ',num2,', ',num3,', ',num1
+13
+4
+1
+34
+'Orden: ',num2,', ',num1,', ',num3
+13
+13
+13
+7
+0
+1
+11
+num2 < num3
+4
+1
+34
+'Orden: ',num1,', ',num3,', ',num2
+13
+4
+1
+34
+'Orden: ',num1,', ',num2,', ',num3
+13
+13
+1

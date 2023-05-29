@@ -1,0 +1,10 @@
+6.  Calcule la media aritmética 
+de 3 números cualesquiera
+===========================
+
+Entrada = 3 mumeros
+
+Salida = media aritmética
+
+a=x1+x2+x3+.../n
+

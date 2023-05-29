@@ -1,0 +1,9 @@
+4. Crear una función que 
+calcule cual es el número 
+menor de dos números 
+enteros. 
+========================
+
+Entrada = 2 #
+
+Salida = menor de 2 #

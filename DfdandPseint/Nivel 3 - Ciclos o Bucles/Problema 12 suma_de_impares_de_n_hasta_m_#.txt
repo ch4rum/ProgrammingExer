@@ -1,0 +1,17 @@
+12. Hacer un programa que 
+imprima la suma de todos los 
+números impares que hay 
+desde n hasta m, y diga
+cuantos números hay?
+========================
+
+Entrada = 1 numero 
+
+Salida = - suma de los impares
+            - conteo
+
+1 2 3 4 5 6 7 8 9 10
+1    3    5    7     9
+   4         12     9
+        16        9
+             25

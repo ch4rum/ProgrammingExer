@@ -1,0 +1,17 @@
+17. Hacer un programa que 
+calcule la media  aritmetica
+de n números 
+========================
+
+Entrada = 1 número
+
+Salida = media aritmetica
+
+
+x1+x2+x3.../n
+
+4+6+3+5/4
+
+18/4
+
+4.25

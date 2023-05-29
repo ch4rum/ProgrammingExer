@@ -1,0 +1,10 @@
+22. Hacer un programa que 
+tome dos números y diga si 
+ambos son pares o impares
+==========================
+
+entrada = 2 #
+
+salidad = si - ambos pares
+              - ambos impares
+          

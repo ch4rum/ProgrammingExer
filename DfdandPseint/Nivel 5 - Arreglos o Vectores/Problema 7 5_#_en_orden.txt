@@ -1,0 +1,9 @@
+7. Hacer un programa que 
+lea 5 números por teclado,los 
+almacene en un array y los 
+ordene de forma ascendente.
+========================
+
+Entrada = 5 #s
+
+Salida = forma ascendente

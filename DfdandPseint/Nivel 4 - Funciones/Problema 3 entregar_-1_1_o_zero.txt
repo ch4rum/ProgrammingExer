@@ -1,0 +1,11 @@
+3. Crear una función que 
+reciba un número y devuelva 
+un numero con el valor de: -1
+si el número es negativo, 1 
+si el número es positivo o 0
+si es cero
+========================
+
+Entrada = número
+
+Salida = -1, 1, 0

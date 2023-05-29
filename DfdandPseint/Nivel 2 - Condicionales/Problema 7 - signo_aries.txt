@@ -1,0 +1,9 @@
+7. Ingresar por teclado el nombre 
+y el signo de cualquier persona 
+e imprima, el nombre solo si la 
+persona es signo Aries
+==========================
+
+Entrada = nombre y signo
+              
+Salida = solo si es aries

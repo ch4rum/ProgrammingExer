@@ -1,0 +1,11 @@
+5. Hacer un Programa que 
+calcule áreas de trapecios 
+===========================
+
+Entrada = basemayor,base menor
+              altura
+
+Salida = área del trapecio
+
+Am2=(B+b)/2*h
+
