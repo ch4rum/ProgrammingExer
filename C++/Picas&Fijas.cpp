@@ -31,6 +31,10 @@
 using namespace std;
 
 pair<int, int> get_picOrFij(const string& key,const string& attempt){
+    /* Funcion que verifica cuales son picas y cuales son fijas en el 
+    intento del usuario, retorna las 2 variables de picas ++, fijas ++,
+    recordando que fijas es que esten en la misma pocision de la llave y 
+    picas en diferente posicion.*/
     int picas = 0, fijas = 0;
     for (int _=0;_<4;_++){
         for (int l=0;l<4;l++){
@@ -48,6 +52,8 @@ pair<int, int> get_picOrFij(const string& key,const string& attempt){
 }
 
 string generateKey(){
+    /* Funcion que genera el numero aleatorio y lo retorna, cumpliendo
+    con que no se repita el numero de la llave*/
     srand(time(NULL));
     string(key);
 
@@ -70,6 +76,7 @@ string generateKey(){
 }
 
 void showMSJ(int count){
+    /* Funcion que solo muestra un mensaje segun los intentos del usuario*/
     if (count<2){
         cout<<"* Excelente,eres un maestro estas fuera del alcance de los demas"<<endl;
     } else if (count<4){
@@ -84,11 +91,12 @@ void showMSJ(int count){
 }
 
 int main (){
+    /* Inicio del juego */
     string attempt, key;
     int count = 0, picas = 0, fijas = 0;
     key = generateKey();
     cout<<"\n\t♠ Picas & Fijas  ♠\n"<<endl;
-    cout<<key<<endl;
+    //cout<<key<<endl; // Descomenta si quieres ver la llave
     while (count < 12){
         cout<<"* Ingrese un numero de 4 cifras sin repetir decimales :> ";cin>>attempt;
         if ((attempt.length() != 4) || (!isdigit(attempt[0])) || (!isdigit(attempt[1]))|| (!isdigit(attempt[2]))|| (!isdigit(attempt[3]))){
@@ -116,6 +124,5 @@ int main (){
             cout<<"\nLa clave era: "<<key<<endl;
         }
     }
-
     return 0;
 }
