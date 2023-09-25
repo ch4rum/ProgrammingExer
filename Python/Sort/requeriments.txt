@@ -1,0 +1,2 @@
+pwntool==4.7.0
+colorama==0.4.4
