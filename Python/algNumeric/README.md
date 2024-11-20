@@ -4,6 +4,7 @@
 
 &ensp;[<kbd> <br> Usage <br> </kbd>](#-usage)&ensp;
 &ensp;[<kbd> <br> Features <br> </kbd>](#-feature)&ensp;
+&ensp;[<kbd> <br> Changelog <br> </kbd>](https://github.com/ch4rum/ProgrammingExer/blob/master/Python/algNumeric/CHANGELOG.md)&ensp;
 <br></div>
 
 ## 👾 Feature
@@ -12,7 +13,9 @@
 This $Python$ code provides a comprehensive visual experience for understanding how different numerical methods approximate the root of a quadratic function. By implementing the methods, the code allows users to observe how each technique adjusts its estimate at each iteration, illustrating intermediate calculations and convergence to the final solution. This helps to compare the methods and better understand the refinement process at each step, providing clear context on the behavior of each approach and allowing users to visualize progress toward the desired solution.
 
 > [!CAUTION]
-> The function is evaluated at $ax²+bx-c$ by secant method, change if necessary.
+> The functions are evaluated in formulas already defined in the code depending on the method used, change the part of the code if needed. 
+
+Check the [changelog](https://github.com/ch4rum/ProgrammingExer/blob/master/Python/algNumeric/CHANGELOG.md) for updates.
 
 ## 💻 Usage
 

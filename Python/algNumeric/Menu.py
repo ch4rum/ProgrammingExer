@@ -2,12 +2,13 @@
 import os
 from algoritmEc import *
 from colorama import Fore, Style, init
+from prettytable import PrettyTable
 
 class Menus:
 
     def __init__(self: 'Menus') -> None:
         self.pc_user = os.getlogin()
-        self.THIS_VERSION = 1.0
+        self.THIS_VERSION = 1.1
         self.ecuacion = AlgoritmEc()
         self.ecuacionDATA = [0]*(3)
 
@@ -19,6 +20,7 @@ class Menus:
           {Fore.RED}│         └─────────┘         │   
           {Fore.RED}├─ {Fore.LIGHTWHITE_EX}1) Ecuacion cuadratica     {Fore.RED}│
           {Fore.RED}├─ {Fore.LIGHTWHITE_EX}2) Metodo secante          {Fore.RED}│
+          {Fore.RED}├─ {Fore.LIGHTWHITE_EX}3) Metodo Newton Raphson   {Fore.RED}│
           {Fore.RED}└─ {Fore.LIGHTWHITE_EX}!) Exit                    {Fore.RED}┘
           """
         print(options)
@@ -30,6 +32,7 @@ class Menus:
                 options = {
                     '1': self.tecnic_cuadratica,
                     '2': self.tecnic_Secante,
+                    '3': self.tecnic_newton_raphson,
                     '!': exit
                 }
                 chosen = options.get(choice)
@@ -62,7 +65,7 @@ class Menus:
         print()
         while True:
             try:
-                return int(input("[+] Rango ha iterar?:> "))
+                return int(input("[+] Rango maximo ha iterar?:> "))
             except Exception as e:
                 continue
             
@@ -72,8 +75,32 @@ class Menus:
             self.ecuacionDATAf()
             range = self.range_iter()
             x = self.ecuacion.tecnic_Secante(self.ecuacionDATA, range)
-            for values in x:
-                print(f"\n[+] {values}")
+            table = PrettyTable()
+            table.field_names = x[0].keys()
+            print()
+            for row in x:
+                table.add_row([round(values, 6) if isinstance(values, float) else values for values in row.values()])
+            print(table)
+        except Exception as e:
+            print("\n", e, "\n")
+
+    def aprox_init(self: 'Menus') -> tuple[float]:
+        print()
+        while True:
+            try:
+                return float(input("[+] Dias aproximacion inicial: ")), float(input("[+] Tolerancia al error: "))
+            except Exception as e:
+                continue
+
+    def tecnic_newton_raphson(self: 'Menus') -> None:
+        try:
+            result = self.ecuacion.tecnic_newton_raphson(self.aprox_init(), self.range_iter())
+            table = PrettyTable()
+            table.field_names = result[0].keys()
+            print()
+            for row in result:
+                table.add_row([round(values, 6) if isinstance(values, float) else values for values in row.values()])
+            print(table)
         except Exception as e:
             print("\n", e, "\n")
 

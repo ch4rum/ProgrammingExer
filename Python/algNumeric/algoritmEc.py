@@ -15,8 +15,14 @@ class AlgoritmEc:
             return self.x1, self.x2
         raise ValueError("[x] Error!, no real roots, discriminant < to 0.")
 
-    def f(self, x:float) -> float:
+    def f(self: 'AlgoritmEc', x:float) -> float:
         return self.aBC[0] * x**2 + self.aBC[1] * x - self.aBC[2]
+
+    def fn(self: 'AlgoritmEc', t: float) -> float:
+        return 3 * math.exp(0.68*t) - 1100*t
+
+    def f_prime(self: 'AlgoritmEc', t: float) -> float:
+        return 2.04 * math.exp(0.68*t) - 1100
 
     def valuesAB(self:'AlgoritmEc') -> None:
         print()
@@ -59,4 +65,27 @@ class AlgoritmEc:
                 raise ValueError("[x] Error relativo alcanzado.")
 
             self.x0, self.x1 = self.x1, self.x2
+        return iterations
+
+    def tecnic_newton_raphson(self, parameter: tuple[float], max_iter:int = 100) -> list[dict[str, float]]:
+        t0 = parameter[0]
+        iterations = list()
+        for i in range(1, max_iter+1):
+            ft = self.fn(t0)
+            fpt = self.f_prime(t0)
+            t1 = t0 - ft / fpt
+
+            error_r = abs((t1-t0)/t1)
+
+            iterations.append({
+                "iteration": i,
+                "t_i-1": t0,
+                "f(t_i-1)": ft,
+                "f\'(t_i-1)": fpt,
+                "t_i": t1,
+                "e_r_norm": error_r
+            })
+            if error_r < parameter[1]:
+                break
+            t0 = t1
         return iterations
