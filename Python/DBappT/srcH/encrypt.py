@@ -14,7 +14,6 @@ class EncryptPass:
         self._encrypt_password(password_b64)
 
     def _encrypt_password(self, password_base64):
-        """Encripta la contraseña en Base64 usando AES con un IV aleatorio"""
         iv = get_random_bytes(16)
         cipher = AES.new(self._encryption_key, AES.MODE_CBC, iv)
         encrypted_password = cipher.encrypt(pad(password_base64.encode('utf-8'), AES.block_size))

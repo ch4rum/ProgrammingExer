@@ -1,52 +1,20 @@
 
 import os
-import signal
-from database import *
-from colorama import Fore, Style, init
-from writeOutput import *
+from colorama import Fore, Style, init  
 
-class Menus(WriteObj):
+from Menus.Menu import Menus
+from DBs.databaseOne import DBappT
+from DBs.conectDB import ConnectDB
 
-    def __init__(self: 'Menus') -> None:
-        self.pc_user = os.getlogin()
-        self.THIS_VERSION = 1.0
-        self.db_app = None
-        signal.signal(signal.SIGINT, self.shutdownsdb)
-        self._login_db()
+class MenuOne(Menus):
 
-    def _login_db(self):
-        try:
-            self.print_debug(" ",f"\n\t\t{Fore.LIGHTCYAN_EX}.:LOGIN DATABASE:.\n")
-            username = input(f"{Fore.LIGHTMAGENTA_EX}Username{Fore.GREEN}:{Style.RESET_ALL} ")
-            password = base64.b64encode(getpass.getpass(f"{Fore.LIGHTMAGENTA_EX}Password{Fore.GREEN}:{Style.RESET_ALL} ").encode('utf-8')).decode('utf-8') 
-            encryption_key = get_random_bytes(16)
-            self.db_app = DBappT(username, password, encryption_key)
-        except Exception as e:
-            self.print_debug(" ","")
-            self.print_debug("FAILED", f"{e}\n")
-            exit(1)
+    def __init__(self, db_app):
+        super().__init__()
+        if not isinstance(db_app, ConnectDB):
+            raise ValueError("db_app debe ser una instancia de ConnectDB.")
+        self.db_app = DBappT(db_app)
 
-    def shutdownsdb(self, signum, frame):
-        self.print_debug(" ", "\n")
-        self.print_debug("WARNING","Close SQL server...\n")
-        if self.db_app:
-            self.db_app.close()
-        exit(0) 
-
-    def print_banner(self):
-        banner =f"""                                  
-
-          {Fore.LIGHTRED_EX}  [.. ..      [....    [..                       
-          {Fore.LIGHTRED_EX}[..    [..  [..    [.. [..                       
-          {Fore.LIGHTRED_EX} [..      [..       [..[..      [. [..  [..   [..    {Fore.GREEN}│ {Fore.WHITE}By: Ch4rum
-          {Fore.LIGHTRED_EX}   [..    [..       [..[..      [.  [..  [.. [..     {Fore.GREEN}├────────────
-          {Fore.LIGHTRED_EX}      [.. [..       [..[..      [.   [..   [...      {Fore.GREEN}│ {Fore.WHITE}Running on: {self.pc_user} PC
-          {Fore.LIGHTRED_EX}[..    [..  [.. [. [.. [..      [.. [..     [..      {Fore.GREEN}├────────────
-          {Fore.LIGHTRED_EX}  [.. ..      [.. ..   [........[..        [..       {Fore.GREEN}│ {Fore.WHITE}v{self.THIS_VERSION}
-          {Fore.LIGHTRED_EX}                   [.           [..      [..  """
-        self.print_debug(" ", banner)
-
-    def print_options(self):
+    def print_optionsOne(self):
         r = Fore.RED
         g = Fore.GREEN
         lb = Fore.LIGHTBLUE_EX
@@ -66,7 +34,7 @@ class Menus(WriteObj):
     {reset}"""
         self.print_debug(" ",options)
 
-    def choose_option(self: 'Menus') -> None:
+    def choose_optionOne(self: 'Menus') -> None:
         while True:
             choice = input(f'{Fore.BLUE}  {Fore.MAGENTA}{self.pc_user}{Fore.RED}@{Fore.BLUE}DB_SQLpy{Fore.BLACK}~{Fore.GREEN}  {Fore.CYAN}').upper()
             try :
@@ -82,7 +50,7 @@ class Menus(WriteObj):
                     'F': self.created_view_order,
                     'G': self.total_sales_in_view,
                     '?': self.different_query,
-                    '>': self.main_menu,
+                    '>': self.main_menu_one,
                     '!': exit
                 }
                 chosen = options.get(choice)
@@ -191,15 +159,15 @@ class Menus(WriteObj):
         self.print_debug(" ","\n\t\t.:Query:.\n")
         while True:
             try:
-                query = input(f"{Fore.CYAN}Query (end with ;): ").title()
+                query = input(f"{Fore.CYAN}Query (end with ;): ").strip()
                 if query == ">": break
                 self.db_app.different_query(query)
                 break
             except Exception as e:
                 self.print_debug("ERROR",e)
 
-    def main_menu(self: 'Menus') -> None:
+    def main_menu_one(self: 'Menus') -> None:
         os.system("cls" if os.name == 'nt' else "clear")
         self.print_banner()
-        self.print_options()
-        self.choose_option()
+        self.print_optionsOne()
+        self.choose_optionOne()

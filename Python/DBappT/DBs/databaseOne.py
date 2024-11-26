@@ -1,33 +1,18 @@
-#!/usr/bin/env python3 
 
-import getpass
-import mysql.connector
-from encrypt import *
+from mysql.connector import Error
 from prettytable import PrettyTable
 
-class DBappT:
-    def __init__(self, username, password_b64, encryption_key):
-        self.username = username
-        self._encryption_key = encryption_key
-        self.necrypt = EncryptPass(encryption_key)
-        self._encrypted_password_b64 = self.necrypt.set_encrypt_pass(password_b64)
-        self.con = self._conect_db()
+from DBs.conectDB import ConnectDB
 
-    def _conect_db(self):
-        decrypted_password = self.necrypt.get_decrypt_pass(self._encryption_key)
-        conexion = mysql.connector.connect(
-            host="localhost", 
-            user=self.username,
-            password=decrypted_password, 
-            database="UnirDB", 
-            charset="utf8mb4",  
-            collation="utf8mb4_unicode_ci"
-        )
-        return conexion 
-
-    def close(self):
-        if self.con.is_connected():
-            self.con.close()
+class DBappT(ConnectDB):
+    
+    def __init__(self, db_app):
+        self.con = db_app.con 
+        try:
+            with self.con.cursor() as cursor:
+                cursor.execute("USE UnirDB")
+        except Error as err:
+            print(f"Error al intentar usar la base de datos: {err}")  
 
     def insert_data_client(self, data):
         try:
@@ -41,7 +26,7 @@ class DBappT:
                 """,(data['name'], data['lastName1'], data['lastName2'] if data['lastName2'] is not None else None, data['city'], data['category']))
                 self.con.commit()
                 print("[+] Cliente insertado con exito.")
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar al insercion de la data: {err}")
 
     def insert_data_order(self, data):
@@ -56,12 +41,12 @@ class DBappT:
                 """,(data['total'], data['date'], data['id_client'], data['id_commercial']))
                 self.con.commit()
                 print("[+] Pedido insertado con exito.")
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar al insercion de la data: {err}")
 
     def insert_data_commercial(self, data):
         try:
-            if not data['name'] or not data['lastName1'] or not data['lastName2'] or not data['commision']:
+            if not data['name'] or not data['lastName1'] or not data['lastName2'] or not data['commission']:
                 raise ValueError("Los campos NOMBRE,  APELLIDO1, APELLIDO2 y COMISION son obligatorios no pueden estar vacios.")
 
             with self.con.cursor() as cursor:
@@ -71,7 +56,7 @@ class DBappT:
                 """,(data['name'], data['lastName1'], data['lastName2'], data['commission']))
                 self.con.commit()
                 print("[+] Comercial insertado con exito.")
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar al insercion de la data: {err}")
 
     def date_order(self):
@@ -82,7 +67,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")
 
     def range_order(self):
@@ -93,7 +78,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")
     
     def client_two_null(self):
@@ -104,7 +89,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")
     
     def client_realized_order(self):
@@ -122,7 +107,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")
 
     def commercial_sales_to_maria(self):
@@ -141,7 +126,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")
 
     def created_view_order(self):
@@ -166,7 +151,7 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")   
 
     def total_sales(self):
@@ -186,9 +171,8 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")  
-
 
     def different_query(self, query):
         try:
@@ -198,5 +182,5 @@ class DBappT:
                 for row in cursor.fetchall():
                     table.add_row(row)
                 print(table)
-        except mysql.connector.Error as err:
+        except Error as err:
             print(f"Error al ejecutar la consulta: {err}")  

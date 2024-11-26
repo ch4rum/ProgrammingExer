@@ -4,6 +4,7 @@
 
 &ensp;[<kbd> <br> Usage <br> </kbd>](#-usage)&ensp;
 &ensp;[<kbd> <br> Features <br> </kbd>](#-feature)&ensp;
+&ensp;[<kbd> <br> Changelog <br> </kbd>](https://github.com/ch4rum/ProgrammingExer/blob/master/Python/DBappT/CHANGELOG.md)&ensp;
 <br></div>
 
 ## 👾 Feature
@@ -13,14 +14,16 @@ $Python$ code provides a command line interface **$(CLI)$** for managing and que
 
 - Prompting the user for their DB username and password. The password is *base64* encrypted, using a random encryption key, to ensure the security of the access data.
 
-- Present the user with an interactive menu with various options for managing customers, orders and sales representatives in the database. Each option is labeled with a number or letter, allowing easy navigation.
+- Present the user with an interactive menu with various options for managing the database. Each option is labeled with a number or letter, allowing easy navigation.
 
-- Allow inserting new records in the database for customers, orders and sales representatives respectively. Each function requests the necessary data and sends it to the database for storage.
+- Allow inserting new records into the database. Each function requests the necessary data and sends it to the database for storage.
 
 - Methods that allow the user to perform queries and generate reports based on the data in the database. In addition, the option to run custom queries though the *different_query* method is included. 
 
 > [!CAUTION]
-> The database used is already created in advance. You can [download to here](https://github.com/ch4rum/ProgrammingExer/tree/master/DB/DBLab).
+> The database used is already created in advance. You can [download to here](https://github.com/ch4rum/ProgrammingExer/tree/master/DB/).
+
+Check the [changelog](https://github.com/ch4rum/ProgrammingExer/blob/master/Python/DBappT/CHANGELOG.md) for updates.
 
 ## 💻 Usage
 

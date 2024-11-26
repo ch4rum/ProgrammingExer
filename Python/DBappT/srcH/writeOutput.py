@@ -11,7 +11,7 @@ class WriteObj:
         
         print(error_level.get(error, f"{message}"), end=end)
 
-# Ejemplo de uso
+# Exaple usage
 #obj = WriteObj()
 #obj.print_debug("OK", "Operation successful")
 #obj.print_debug("FAILED", "Operation failed")
